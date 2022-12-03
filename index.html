@@ -233,7 +233,7 @@
                       <dt>Tiện ích đi kèm:</dt>
                       <dd><span>Hồ bơi vô cực , phòng gym , phòng chơi cho trẻ em </span></dd>
                     </dl>
-                  </div><a class="button button-effect-ujarak button-lg button-secondary-outline button-square" href="#"><span>Liên hệ ngay</span></a>
+                  </div><a class="button button-effect-ujarak button-lg button-secondary-outline button-square" href="#" id="btn-scrollto-top"><span>Liên hệ ngay</span></a>
                 </div>
               </div>
             </div>
@@ -457,6 +457,9 @@
     <script src="js/core.min.js"></script>
     <script src="js/script.js"></script>
     <script>
+      $('#btn-scrollto-top').click(function(){
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
       $('.btn-submit').click(function(){
         let name = $('#contact-first-name').val()
         let phone =  $('#contact-phone-number').val()
