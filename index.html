@@ -482,7 +482,7 @@
         if(flag){
           $(".page-loader").removeClass('loaded');
           $.ajax({
-            url: "https://mailsenddemo.herokuapp.com/sendEmailToHost",
+            url: "https://checkin-hotel-server.vercel.app/sendEmailToHost",
             data: { email : "phuckhanghomestayvungtau@gmail.com",subject: "PhucKhangApartment Khách hàng yêu cầu liên hệ ! " , name :name, number :phone, fromDate:datein, toDate:dateOut , typeRoom:'Căn hộ'},
             method:"POST"
           }).done(function() {
