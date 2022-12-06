@@ -22,16 +22,16 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
     <style>
-      .rd-navbar-top-panel-inner:{
+      .rd-navbar-top-panel-inner{
         justify-content: normal;
       };
       @media only screen and (min-width: 600px) {
-      .right-side:{
+      .right-side{
         position: absolute;
         right: 0;
       };
       }
-      .center-side:{
+      .center-side{
         position: absolute;
         left: 0;
         right: 0;
@@ -39,7 +39,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         text-align: center;
         margin-right: auto;
       };
-      .mobile-brand:{
+      .mobile-brand{
          position: absolute;
         left: 0;
         right: 0;
@@ -47,7 +47,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         text-align: center;
         margin-right: auto;
       };
-      .ie-panel{display: none;background: #212121;padding: 10px 0;box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3);clear: both;text-align:center;position: relative;z-index: 1;} html.ie-10 .ie-panel, html.lt-ie-10 .ie-panel {display: block;}</style>
+      .select2-container{
+        width: 100% !important
+      };
+      #select2-chosen-1{
+        margin-left: 20px !important
+      };
+      .ie-panel{display: none;background: #212121;padding: 10px 0;box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3);clear: both;text-align:center;position: relative;z-index: 1;} html.ie-10 .ie-panel, html.lt-ie-10 .ie-panel {display: block;}
+      </style>
   </head>
   <body>
     <!-- <div class="ie-panel"><a href="http://windows.microsoft.com/en-US/internet-explorer/"><img src="images/ie8-panel/warning_bar_0000_us.jpg" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."></a></div> -->
@@ -175,11 +182,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <div class="swiper-slide" data-slide-bg="images/slide-01.jpg">
                       <div class="swiper-slide-caption">
                         <div class="shell text-sm-left">
-                          <h1 data-caption-animate="slideInDown" data-caption-delay="100">Your Ideal Retreat</h1>
+                          <h1 data-caption-animate="slideInDown" data-caption-delay="100">Phúc Khang</h1>
                           <div class="slider-subtitle-group">
                             <div class="decoration-line" data-caption-animate="slideInDown" data-caption-delay="400"></div>
-                            <h4 data-caption-animate="slideInLeft" data-caption-delay="700">Enjoy the world of relaxation</h4>
-                            <h3 data-caption-animate="slideInLeft" data-caption-delay="800">and tranquility!</h3>
+                            <h4 data-caption-animate="slideInLeft" data-caption-delay="700">Căn hộ cao cấp</h4>
+                            <h3 data-caption-animate="slideInLeft" data-caption-delay="800">Du lịch Vũng Tàu</h3>
                           </div>
                         </div>
                       </div>
@@ -187,11 +194,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <div class="swiper-slide" data-slide-bg="images/slide-02.jpg">
                       <div class="swiper-slide-caption">
                         <div class="shell text-sm-left">
-                          <h1 data-caption-animate="slideInDown" data-caption-delay="100">Relax & Unwind</h1>
+                          <h1 data-caption-animate="slideInDown" data-caption-delay="100">Sang trọng</h1>
                           <div class="slider-subtitle-group">
                             <div class="decoration-line" data-caption-animate="slideInDown" data-caption-delay="400"></div>
-                            <h4 data-caption-animate="slideInLeft" data-caption-delay="700">Experience the luxurious level</h4>
-                            <h3 data-caption-animate="slideInLeft" data-caption-delay="800">of our infinite pool</h3>
+                            <h4 data-caption-animate="slideInLeft" data-caption-delay="700">Nâng tầm bản thân</h4>
+                            <h3 data-caption-animate="slideInLeft" data-caption-delay="800">Nâng tầm trải nghiệm</h3>
                           </div>
                         </div>
                       </div>
@@ -199,11 +206,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <div class="swiper-slide" data-slide-bg="images/slide-03.jpg">
                       <div class="swiper-slide-caption">
                         <div class="shell text-sm-left">
-                          <h1 data-caption-animate="slideInDown" data-caption-delay="100">Revitalize & Relax</h1>
+                          <h1 data-caption-animate="slideInDown" data-caption-delay="100">Nghỉ dưỡng</h1>
                           <div class="slider-subtitle-group"> 
                             <div class="decoration-line" data-caption-animate="slideInDown" data-caption-delay="400"></div>
-                            <h4 data-caption-animate="slideInLeft" data-caption-delay="700">Indulge in our top-notch</h4>
-                            <h3 data-caption-animate="slideInLeft" data-caption-delay="800">spa resort</h3>
+                            <h4 data-caption-animate="slideInLeft" data-caption-delay="700">BBQ ngoài trời</h4>
+                            <h3 data-caption-animate="slideInLeft" data-caption-delay="800">Hồ bơi vô cực</h3>
                           </div>
                         </div>
                       </div>
@@ -231,6 +238,17 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                       <div class="form-wrap">
                         <input class="form-input" id="contact-phone-number" type="text" name="name" data-constraints="@Required">
                         <label class="form-label" for="contact-phone-number">Phone number</label>
+                      </div>
+                    </div>
+                    <div class="cell-lg-12">
+                      <p class="text-uppercase">Loại phòng</p>
+                      <div class="form-wrap" >
+                        <label class="form-label form-label-icon" for="typeRoom"><span class="icon icon-primary fa-calendar"></span><span>Type Room</span></label>
+                        <select id="typeRoom" name="typeRoom" style="width: 100%; " >
+                          <option value="single">Căn hộ 1 phòng ngủ</option>
+                          <option value="double">Căn hộ 2 phòng ngủ</option>
+                          <option value="triple">Căn hộ 3 phòng ngủ</option>
+                        </select>  
                       </div>
                     </div>
                     <div class="cell-lg-12 cell-md-4 cell-sm-6">
@@ -515,7 +533,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         let phone =  $('#contact-phone-number').val()
         let datein= $('#date-in').val()
         let dateOut = $('#date-out').val()
-        
+        let typeRoom = $('#typeRoom').val();
         let flag = true;
         if(name === ''){
           flag = false
@@ -533,7 +551,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           $(".page-loader").removeClass('loaded');
           $.ajax({
             url: "https://checkin-hotel-server.vercel.app/sendEmailToHost",
-            data: { email : "phuckhanghomestayvungtau@gmail.com",subject: "PhucKhangApartment Khách hàng yêu cầu liên hệ ! " , name :name, number :phone, fromDate:datein, toDate:dateOut , typeRoom:'Căn hộ'},
+            data: { email : "phuckhanghomestayvungtau@gmail.com",subject: "PhucKhangApartment Khách hàng yêu cầu liên hệ ! " , name :name, number :phone, fromDate:datein, toDate:dateOut , typeRoom:'Apartment '+ typeRoom + 'bed room'},
             method:"POST"
           }).done(function() {
             $(".page-loader").addClass('loaded');

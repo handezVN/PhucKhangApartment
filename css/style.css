@@ -17272,6 +17272,7 @@ Version: 3.5.4 Timestamp: Sun Aug 30 13:30:32 EDT 2015
 	overflow: hidden;
 	white-space: nowrap;
 	text-overflow: ellipsis;
+	margin-left: 20px;
 }
 
 .select2-arrow {
