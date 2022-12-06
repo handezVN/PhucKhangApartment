@@ -1,5 +1,7 @@
-User-agent: Googlebot-news
-Allow: /
-
 User-agent: *
-Disallow: /
+Disallow: /includes/
+
+User-agent: Googlebot
+Allow: /includes/
+
+Sitemap: https://phuckhangapartment.com/sitemap.xml
