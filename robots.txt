@@ -1,7 +1,12 @@
-User-agent: *
-Disallow: /includes/
+ Example 1: Block only Googlebot
+ User-agent: Googlebot
+ Disallow: /
 
-User-agent: Googlebot
-Allow: /includes/
+ # Example 2: Block Googlebot and Adsbot
+ User-agent: Googlebot
+ User-agent: AdsBot-Google
+ Disallow: /
 
-Sitemap: https://phuckhangapartment.com/sitemap.xml
+ # Example 3: Block all crawlers except AdsBot (AdsBot crawlers must be named explicitly)
+ User-agent: *
+ Disallow: /
