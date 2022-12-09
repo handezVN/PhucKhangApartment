@@ -226,6 +226,14 @@ h1,
 		line-height: 1.15789;
 		font-size: 95px;
 	}
+	.right-side{
+        position: absolute;
+        right: 0;
+      };
+      .left-side{
+        position: absolute;
+        z-index: 20;
+      }
 }
 
 h2,
@@ -31718,4 +31726,15 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 		opacity: 1;
 		transform: translate(-100%, -60%);
 	}
+}
+@media (min-width: 768px) {
+	
+	.right-side{
+        position: absolute;
+        right: 0;
+      };
+      .left-side{
+        position: absolute;
+        z-index: 20;
+      }
 }
