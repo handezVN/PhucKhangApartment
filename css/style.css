@@ -31727,14 +31727,3 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 		transform: translate(-100%, -60%);
 	}
 }
-@media (min-width: 768px) {
-	
-	.right-side{
-        position: absolute;
-        right: 0;
-      };
-      .left-side{
-        position: absolute;
-        z-index: 20;
-      }
-}
