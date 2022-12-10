@@ -46,7 +46,8 @@ var userAgent = navigator.userAgent.toLowerCase(),
 			lightGallery: $('[data-lightgallery="group"]'),
 			lightGalleryItem: $('[data-lightgallery="item"]'),
 			lightDynamicGalleryItem: $('[data-lightgallery="dynamic"]'),
-			maps: $('.google-map-container')
+			maps: $('.google-map-container'),
+			listImg : $('#isotope-listimage')
 		};
 
 /**
@@ -91,6 +92,8 @@ $window.on('load', function () {
 			}
 		}
 	}
+	
+	
 });
 
 /**
